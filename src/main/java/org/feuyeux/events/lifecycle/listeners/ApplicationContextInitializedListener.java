@@ -5,9 +5,10 @@ import org.springframework.boot.context.event.ApplicationContextInitializedEvent
 import org.springframework.context.ApplicationListener;
 
 @Slf4j
-public class ApplicationContextInitializedListener implements ApplicationListener<ApplicationContextInitializedEvent> {
-    @Override
-    public void onApplicationEvent(ApplicationContextInitializedEvent event) {
-        log.info("Handling ApplicationContextInitializedEvent {}", event.getTimestamp());
-    }
+public class ApplicationContextInitializedListener
+    implements ApplicationListener<ApplicationContextInitializedEvent> {
+  @Override
+  public void onApplicationEvent(ApplicationContextInitializedEvent event) {
+    log.info("Handling ApplicationContextInitializedEvent {}", event.getTimestamp());
+  }
 }

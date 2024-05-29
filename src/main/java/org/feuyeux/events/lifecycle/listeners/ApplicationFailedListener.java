@@ -8,6 +8,6 @@ import org.springframework.context.ApplicationListener;
 public class ApplicationFailedListener implements ApplicationListener<ApplicationFailedEvent> {
   @Override
   public void onApplicationEvent(ApplicationFailedEvent event) {
-    log.info("Handling ApplicationFailedEvent {}",event.getTimestamp());
+    log.info("Handling ApplicationFailedEvent {}", event.getTimestamp());
   }
 }

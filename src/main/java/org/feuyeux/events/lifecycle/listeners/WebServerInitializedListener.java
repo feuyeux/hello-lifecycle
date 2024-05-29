@@ -10,6 +10,6 @@ public class WebServerInitializedListener
 
   @Override
   public void onApplicationEvent(WebServerInitializedEvent event) {
-    log.info("Handling WebServerInitializedEvent {}",event.getTimestamp());
+    log.info("Handling WebServerInitializedEvent {}", event.getTimestamp());
   }
 }

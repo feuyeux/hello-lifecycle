@@ -8,6 +8,6 @@ import org.springframework.context.ApplicationListener;
 public class ApplicationStartedListener implements ApplicationListener<ApplicationStartedEvent> {
   @Override
   public void onApplicationEvent(ApplicationStartedEvent event) {
-    log.info("Handling ApplicationStartedEvent {}",event.getTimestamp());
+    log.info("Handling ApplicationStartedEvent {}", event.getTimestamp());
   }
 }

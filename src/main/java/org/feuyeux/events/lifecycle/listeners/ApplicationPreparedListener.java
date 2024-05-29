@@ -8,6 +8,6 @@ import org.springframework.context.ApplicationListener;
 public class ApplicationPreparedListener implements ApplicationListener<ApplicationPreparedEvent> {
   @Override
   public void onApplicationEvent(ApplicationPreparedEvent event) {
-    log.info("Handling ApplicationPreparedEvent {}",event.getTimestamp());
+    log.info("Handling ApplicationPreparedEvent {}", event.getTimestamp());
   }
 }

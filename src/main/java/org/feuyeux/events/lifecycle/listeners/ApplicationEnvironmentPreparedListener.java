@@ -9,6 +9,6 @@ public class ApplicationEnvironmentPreparedListener
     implements ApplicationListener<ApplicationEnvironmentPreparedEvent> {
   @Override
   public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
-    log.info("Handling ApplicationEnvironmentPreparedEvent {}",event.getTimestamp());
+    log.info("Handling ApplicationEnvironmentPreparedEvent {}", event.getTimestamp());
   }
 }

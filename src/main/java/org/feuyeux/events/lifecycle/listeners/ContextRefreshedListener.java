@@ -8,6 +8,6 @@ import org.springframework.context.event.ContextRefreshedEvent;
 public class ContextRefreshedListener implements ApplicationListener<ContextRefreshedEvent> {
   @Override
   public void onApplicationEvent(ContextRefreshedEvent event) {
-    log.info("Handling ContextRefreshedEvent {}",event.getTimestamp());
+    log.info("Handling ContextRefreshedEvent {}", event.getTimestamp());
   }
 }
